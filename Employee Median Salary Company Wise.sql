@@ -1,3 +1,5 @@
+--https://www.youtube.com/watch?v=fwPk1RXlorQ&list=PLBTZqjSKn0IfULLRo9Tm4lESxYMAG7fUQ&index=2
+
 create table employee 
 (
 emp_id int,
