@@ -1,3 +1,5 @@
+--https://leetcode.com/problems/human-traffic-of-stadium/description/
+
 with grp_number as
 (select *, 
 row_number() over (order by visit_date) as rn,
