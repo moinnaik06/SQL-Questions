@@ -19,3 +19,12 @@ commit;
  select player_id, min(event_date)
 from activity
 group by player_id;
+
+--game play analysis 2
+with cte as (
+select player_id, device_id, row_number() over(partition by player_id order by event_date) as rn
+from activity)
+select player_id, max(device_id) as device_id
+from cte
+where rn = 1
+group by player_id
