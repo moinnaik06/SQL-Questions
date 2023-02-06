@@ -28,3 +28,5 @@ select player_id, max(device_id) as device_id
 from cte
 where rn = 1
 group by player_id
+
+drop table activity;
